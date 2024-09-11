@@ -35,8 +35,8 @@
 						<a href="#hero" class="nav__link nav__link--active">Головна</a>
 						<a href="#about" class="nav__link">Про нас</a>
 						<a href="#services" class="nav__link">Послуги</a>
-						<a href="" class="nav__link">Партнери</a>
-						<a href="" class="nav__link">Контакти</a>
+						<a href="#partners" class="nav__link">Партнери</a>
+						<a href="#contacts" class="nav__link">Контакти</a>
 					</nav>
 					<div class="lang">
 						<a href="" class="lang__item">En</a>
@@ -53,8 +53,8 @@
 						<a href="#hero" class="nav__link nav__link--active">Головна</a>
 						<a href="#about" class="nav__link">Про нас</a>
 						<a href="#services" class="nav__link">Послуги</a>
-						<a href="" class="nav__link">Партнери</a>
-						<a href="" class="nav__link">Контакти</a>
+						<a href="#partners" class="nav__link">Партнери</a>
+						<a href="#contacts" class="nav__link">Контакти</a>
 					</nav>
 					<div class="lang">
 						<a href="" class="lang__item">En</a>
@@ -67,7 +67,7 @@
 				<div class="hero__title">Послуги з пожежної та техногенної безпеки</div>
 				<div class="hero__descr">Група компаній «ФАЕТОН» надає повний комплекс послуг від проєкту, монтажу, постачання, сервісного обслуговування пожежних систем до проведення навчання й розробки документації з пожежної безпеки та охорони праці</div>
 			</div>
-
+			<a href="#about" class="down">( Гортати вниз )</a>
 		</section>
 
 		<section class="about  section" id="about">
@@ -102,10 +102,11 @@
 
 		</section>
 
-		<div class="services" id="services">
+		<div class="services section" id="services">
 
 			<div class="services__inner">
 
+				<img src="images/text.png" alt="" class="services__img">
 				<div class="mini-title">( Послуги )</div>
 
 				<div class="services__list">
@@ -229,7 +230,7 @@
 						</div>
 					</div>
 
-					<div class="services__btn">
+					<div class="btn-big services__btn">
 						Замовити послугу
 						<img src="images/snall-arrow.png" alt="" class="arrow">
 					</div>
@@ -241,29 +242,124 @@
 
 		<section class="galleray">
 			<div class="gallery__inner">
-				<section class="gallery__item first">
-
-				</section>
-				<section class="gallery__item second">
-
-				</section>
-				<section class="gallery__item third">
-
-				</section>
-				<section class="gallery__item fourth">
-
-				</section>
+				<div class="gallery__item first"></div>
+				<div class="gallery__item second"></div>
+				<div class="gallery__item third"></div>
+				<div class="gallery__item fourth"></div>
 			</div>
 		</section>
 
-		<section class="partners">
+		<section class="partners section" id="partners">
 			<div class="partners__inner">
+
 				<div class="mini-title">( Партнери )</div>
 				<div class="partners__title">Серед наших клієнтів</div>
+
+				<div class="logos">
+
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="images/p1.png" alt="Image 1" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p2.png" alt="Image 2" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p3.png" alt="Image 3" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p4.png" alt="Image 4" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p5.png" alt="Image 5" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p6.png" alt="Image 6" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p7.png" alt="Image 7" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p8.png" alt="Image 8" />
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-container2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="images/p8.png" alt="Image 1" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p7.png" alt="Image 2" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p6.png" alt="Image 3" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p5.png" alt="Image 4" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p4.png" alt="Image 5" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p3.png" alt="Image 6" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p2.png" alt="Image 7" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/p1.png" alt="Image 8" />
+							</div>
+						</div>
+					</div>
+
+				</div>
 
 				<div class="partners__text">
 					Ми цінуємо довіру всіх наших постійних клієнтів і партнерів,
 					та завжди відкриті до нових проєктів та співпраці
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts section" id="contacts">
+			<div class="mini-title contacts__title">( Контакти )</div>
+			<div class="contacts__inner">
+				<img src="images/alarm.png" alt="" class="contacts__icon">
+				<img src="images/faeton.png" alt="" class="contacts__faeton">
+				<div class="contacts__content">
+					<div class="contacts__text">
+						Якщо у Вас залишилися питання чи потрібна консультація — зв'яжіться з нами
+					</div>
+					<div class="btn-big">
+						Обговорити Ваш проєкт
+						<img src="images/snall-arrow.png" alt="" class="arrow">
+					</div>
+				</div>
+			</div>
+
+			<div class="adress">
+				<div class="adress__wrap">
+					<div class="adress__item">
+						<div class="adress__title">Телефони</div>
+						<a href="" class="adress__content">+380 ( 48 ) 783 15 11</a>
+						<a href="" class="adress__content">+380 ( 94 ) 940 55 11</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__title">Адреса</div>
+						<a href="" class="adress__content">
+							65012, Україна, м. Одеса,<br>
+							пр-т Шевченка, 31
+						</a>
+					</div>
+				</div>
+				<div class="adress__wrap adress__wrap--email">
+					<div class="adress__item">
+						<div class="adress__title">Електронна пошта</div>
+						<a href="" class="adress__content">faeton2020.info@gmail.com</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -273,11 +369,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 	<script>
-
-		let header = document.querySelector('.header--sticky')
-
-		// if (header) {
-
 
 		const tl = gsap.timeline();
 		tl.fromTo('.second', { x: '-100%', y: '+100%' }, { y: 0, ease: 'power2.out' })
