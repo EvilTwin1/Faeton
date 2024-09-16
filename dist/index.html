@@ -17,16 +17,25 @@
 	<meta property="og:title" content="" />
 	<meta property="og:description" content="" />
 
-	<link rel="shortcut icon" href="images/faeton-favicon.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="images/faeton-favicon.png" />
+	<link rel="shortcut icon" href="images/faeton-favicon.ico" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/faeton-favicon.ico" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.min.css" />
 </head>
 
 <body class="body">
+
+	<div class="loader" id="preloader">
+		<img src="images/loader.gif" alt="" class="loader__img">
+	</div>
+
 	<main class="main">
 
-		<section class="hero  section" id="hero">
+		<section class="hero  section section-mob" id="hero" data-name="Головна">
 			<div class="header">
 				<img src="images/logo.png" width="328" alt="" class="header__logo">
 
@@ -68,7 +77,7 @@
 				<div class="hero__descr">Група компаній «ФАЕТОН» надає повний комплекс послуг від проєкту, монтажу, постачання, сервісного обслуговування пожежних систем до проведення навчання й розробки документації з пожежної безпеки та охорони праці</div>
 			</div>
 			<a href="#about" class="down">( Гортати вниз )</a>
-			<div class="mob-btn">
+			<div class="mob-btn" id="mob-btn">
 				<div class="mob-btn__inner">
 					<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -83,11 +92,11 @@
 					</svg>
 					<div class="mob-btn__lable">Меню</div>
 				</div>
-				<div class="mob-btn__current">Головна</div>
+				<div class="mob-btn__current" id="mob-btn__current">Головна</div>
 			</div>
 		</section>
 
-		<section class="about  section" id="about">
+		<section class="about  section section-mob" id="about" data-name="Про нас">
 			<!-- <div class="about__inner"> -->
 			<div class="mini-title about__title">( Про нас )</div>
 			<img src="images/logo-vector.png" alt="" class="about__logo">
@@ -102,11 +111,11 @@
 
 		</section>
 
-		<section class="big-logo ">
+		<section class="big-logo section section-mob" data-name="Про нас">
 			<img src="images/full-logo.png" alt="" class="big-logo__img">
 		</section>
 
-		<section class="info ">
+		<section class="info section-mob" data-name="Про нас">
 			<div class="info__inner">
 				<div class="info__item">
 					<div class="info__number">22+</div>
@@ -124,7 +133,7 @@
 
 		</section>
 
-		<div class="services section" id="services">
+		<div class="services section section-mob" id="services" data-name="Послуги">
 
 			<div class="services__inner">
 
@@ -271,7 +280,7 @@
 			</div>
 		</section>
 
-		<section class="galleray-mob">
+		<section class="galleray-mob section-mob" data-name="Послуги">
 			<div class="gallery-mob__inner">
 
 				<div class="gallery-mob__item first-mob"></div>
@@ -281,7 +290,7 @@
 			</div>
 		</section>
 
-		<section class="partners section" id="partners">
+		<section class="partners section section-mob" id="partners" data-name="Партнери">
 			<div class="partners__inner">
 
 				<div class="mini-title partners__t">( Партнери )</div>
@@ -357,7 +366,7 @@
 
 		</section>
 
-		<section class="contacts section" id="contacts">
+		<section class="contacts section section-mob" id="contacts" data-name="Контакти">
 			<img src="images/faeton.png" alt="" class="contacts__faeton">
 			<div class="contacts__copy">©2024 ГК «ФАЕТОН» Всі права захищено</div>
 			<div class="mini-title contacts__title">( Контакти )</div>
@@ -368,7 +377,7 @@
 					<div class="contacts__text">
 						Якщо у Вас залишилися питання чи потрібна консультація — зв'яжіться з нами
 					</div>
-					<div class="btn-big">
+					<div class="btn-big contacts__btn ">
 						Обговорити Ваш проєкт
 						<img src="images/snall-arrow.png" alt="" class="arrow">
 					</div>
