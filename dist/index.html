@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Фаетон</title>
+	<title>ФАЕТОН</title>
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -78,7 +78,7 @@
 			</div>
 			<a href="#about" class="down">( Гортати вниз )</a>
 			<div class="mob-btn" id="mob-btn">
-				<div class="mob-btn__inner">
+				<div class="mob-btn__inner" id="open-menu">
 					<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M0.404153 9.52805C0.275293 9.52805 0.175719 9.49538 0.105431 9.43005C0.0351437 9.37405 0 9.29938 0 9.20605V8.67405C0 8.58072 0.0351437 8.50605 0.105431 8.45005C0.175719 8.38472 0.275293 8.35205 0.404153 8.35205H10.5958C10.713 8.35205 10.8067 8.38472 10.877 8.45005C10.959 8.50605 11 8.58072 11 8.67405V9.20605C11 9.29938 10.959 9.37405 10.877 9.43005C10.8067 9.49538 10.713 9.52805 10.5958 9.52805H0.404153Z"
@@ -416,6 +416,63 @@
 		</section>
 	</main>
 
+	<div class="mob-nav" id="mob-nav">
+		<div class="header">
+			<img src="images/logo.png" width="328" alt="" class="header__logo">
+
+			<div class="header__inner">
+				<nav class="nav">
+					<a href="#hero" class="nav__link nav__link--active">Головна</a>
+					<a href="#about" class="nav__link">Про нас</a>
+					<a href="#services" class="nav__link">Послуги</a>
+					<a href="#partners" class="nav__link">Партнери</a>
+					<a href="#contacts" class="nav__link">Контакти</a>
+				</nav>
+				<div class="lang">
+					<a href="" class="lang__item">En</a>
+					<a href="" class="lang__item lang__item--active">Ua</a>
+				</div>
+				<div class="callback">Обговорити проєкт</div>
+			</div>
+		</div>
+		<div class="mob-nav__list">
+
+			<a href="#hero" class="mob-nav__link ">Головна</a>
+			<a href="#about" class="mob-nav__link">Про нас</a>
+			<a href="#services" class="mob-nav__link">Послуги</a>
+			<a href="#partners" class="mob-nav__link">Партнери</a>
+			<a href="#contacts" class="mob-nav__link">Контакти</a>
+
+		</div>
+
+		<div class="adress__wrap adress__wrap--email">
+			<div class="adress__item">
+				<div class="adress__title">Електронна пошта</div>
+				<a href="" class="adress__content">faeton2020.info@gmail.com</a>
+			</div>
+		</div>
+
+		<div class="adress__item">
+			<div class="adress__title">Телефони</div>
+			<a href="" class="adress__content">+380 ( 48 ) 783 15 11</a>
+			<a href="" class="adress__content">+380 ( 94 ) 940 55 11</a>
+		</div>
+
+		<div class="mob-btn mob-btn-menu" id="mob-btn">
+			<div class="mob-btn__inner" id="mob-close">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M11.8602 10.9037C11.9513 10.9948 11.9987 11.0883 12.0022 11.1842C12.0123 11.2735 11.9843 11.3511 11.9183 11.4171L11.5421 11.7933C11.4761 11.8593 11.3985 11.8873 11.3092 11.8771C11.2133 11.8736 11.1198 11.8263 11.0287 11.7352L3.82206 4.5286C3.73922 4.44577 3.69605 4.3564 3.69255 4.2605C3.67417 4.16292 3.69797 4.08113 3.76397 4.01513L4.14015 3.63895C4.20614 3.57296 4.28793 3.54915 4.38552 3.56754C4.48141 3.57104 4.57078 3.61421 4.65362 3.69705L11.8602 10.9037Z"
+						fill="white" />
+					<path
+						d="M4.65249 11.8597C4.56138 11.9509 4.46787 11.9982 4.37197 12.0017C4.28267 12.0118 4.20502 11.9838 4.13903 11.9178L3.76284 11.5417C3.69685 11.4757 3.6689 11.398 3.679 11.3087C3.68251 11.2128 3.72982 11.1193 3.82094 11.0282L11.0276 3.82157C11.1104 3.73874 11.1998 3.69557 11.2957 3.69206C11.3932 3.67368 11.475 3.69748 11.541 3.76348L11.9172 4.13966C11.9832 4.20566 12.007 4.28745 11.9886 4.38503C11.9851 4.48093 11.9419 4.57029 11.8591 4.65313L4.65249 11.8597Z"
+						fill="white" />
+				</svg>
+				<div class="mob-btn__lable">Закрити</div>
+			</div>
+			<div class="mob-btn__current" id="mob-btn__current-nav">Головна</div>
+		</div>
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
