@@ -481,7 +481,8 @@
 		<div class="close">
 			<img src="images/close.svg" alt="">
 		</div>
-		<div class="modal-wrap">
+		<form class="modal-wrap">
+
 			<div class="noties">* Обовязкові поля</div>
 			<div class="modal__item">
 				<div class="modal__lable">Ім'я<span>*</span></div>
@@ -500,18 +501,25 @@
 				<input type="text" class="modal__input">
 			</div>
 			<div class="modal__item">
-				<div class="modal__lable">Повідомлення</div>
-				<input type="text" class="modal__input">
+				<div class="modal__lable modal__lable--textarea">Повідомлення</div>
+				<input type="text" class="modal__input modal__input--textarea">
 			</div>
 			<div class="modal__item-btn">
 				<div class="modal__lable-btn">
 					<input type="checkbox" id="chek" class="custom-chek" name="option" value="Option">
 					<label for="chek" class="new-chek"></label>
-					Згоден(а) із <a href="#">Політикою Конфіденційності</a>
+					<p>Згоден(а) із <a href="#">Політикою Конфіденційності</a></p>
 				</div>
-				<button class="modal__btn"> Відправити</button>
+				<button class="modal__btn">
+					Відправити
+					<svg class="modal__btn--arrow" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M0.646447 5.64645C0.451184 5.84171 0.451184 6.15829 0.646447 6.35355C0.841709 6.54882 1.15829 6.54882 1.35355 6.35355L0.646447 5.64645ZM6.5 1C6.5 0.723857 6.27614 0.5 6 0.5L1.5 0.5C1.22386 0.5 1 0.723857 1 1C1 1.27614 1.22386 1.5 1.5 1.5L5.5 1.5L5.5 5.5C5.5 5.77614 5.72386 6 6 6C6.27614 6 6.5 5.77614 6.5 5.5L6.5 1ZM1.35355 6.35355L6.35355 1.35355L5.64645 0.646446L0.646447 5.64645L1.35355 6.35355Z"
+							fill="white" />
+					</svg>
+				</button>
 			</div>
-		</div>
+		</form>
 	</div>
 
 	<div class="mob-nav" id="mob-nav">
@@ -525,6 +533,7 @@
 					<a href="#services" class="nav__link">Послуги</a>
 					<a href="#partners" class="nav__link">Партнери</a>
 					<a href="#contacts" class="nav__link">Контакти</a>
+
 				</nav>
 				<div class="lang">
 					<a href="" class="lang__item">En</a>
@@ -539,8 +548,9 @@
 			<a href="#about" class="mob-nav__link">Про нас</a>
 			<a href="#services" class="mob-nav__link">Послуги</a>
 			<a href="#partners" class="mob-nav__link">Партнери</a>
-			<a href="#contacts" class="mob-nav__link">Контакти</a>
-
+			<div class="mob-nav__link modal-btn">
+				Обговорити проєкт
+			</div>
 		</div>
 
 		<div class="adress__wrap adress__wrap--email">
